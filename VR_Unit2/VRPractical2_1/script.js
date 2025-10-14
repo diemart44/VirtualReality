@@ -17,6 +17,8 @@ window.addEventListener("DOMContentLoaded",function() {
    //Task 4: Use the createHouse(...)  to add several houses to the scene at various positions.
 })
 
+
+
 /* Task 1: Create a function createCloud that,
       1) Accept an x, y and z position for where to place the cloud "entity"
       2) Create an entity to store all the components that will make up the cloud
@@ -56,3 +58,14 @@ function createTree(x, y, z){
 
 
 
+window.addEventListener("DOMContentLoaded",function() {
+  scene = document.querySelector("a-scene"); //CSS Selector
+
+  for(let i = 0; i < 100; i++){
+    let x = rnd(-20,20);
+    let z = rnd(-20,20);
+    createCloud(x,0,z);
+  }
+})
+
+function createCloud
